@@ -2,10 +2,13 @@
 
 ## Requirement status
 
-- **Implemented:** verified in code and tests.
-- **Planned:** approved direction, not yet implemented.
-- **Blocked:** cannot be implemented safely until a named decision or control exists.
-- **Proposed:** requires owner approval.
+- **Implemented:** verified in current source code and relevant tests.
+- **Partially implemented:** some required records or logic exist, but the complete end to end workflow is incomplete.
+- **Planned:** included in an approved direction or roadmap, but not implemented.
+- **Proposed:** recommended and awaiting owner approval.
+- **Blocked:** cannot safely or correctly proceed until a named dependency or decision is resolved.
+- **Unknown:** evidence is insufficient to make a reliable status claim.
+- **Retired:** no longer intended.
 
 Priority: P0 means a release or safety blocker; P1 means essential for the next usable workflow; P2 means important follow on; P3 means later expansion.
 
