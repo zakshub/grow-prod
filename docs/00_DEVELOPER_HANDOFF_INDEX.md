@@ -6,20 +6,20 @@
 |---|---|
 | Product | GROW |
 | Package | Developer documentation and project scoping |
-| Version | 0.1 |
+| Version | 1.0 |
 | Prepared | 25 November 2026 |
 | Status | Draft for owner review |
-| Authority | zakshub/grow |
-| Working destination | zakshub/grow-prod |
+| Authority | `zakshub/grow` |
+| Working destination | `zakshub/grow-prod` |
 | Intended readers | Product owner, technical lead, backend and frontend developers, UX designer, QA, operations and safeguarding reviewers |
 
 ## Executive summary
 
-GROW is a Pakistan first education access, self discovery, capability discovery, career exploration and student direction platform. It is intended for people who do not yet understand their interests, strengths, working preferences, constraints, or realistic education and career options.
+GROW is a Pakistan first education access, self discovery, capability discovery, career exploration and student direction platform. It is intended for people who do not yet understand their interests, strengths, working preferences, constraints or realistic education and career options.
 
-The product must not be reduced to a personality quiz, a chatbot, a course marketplace, a generic learning management system, or an automated career prediction service. Its central method is progressive discovery: gather context, collect multiple kinds of evidence, preserve uncertainty and contradictions, test promising directions through practical activities, and provide explainable guidance with human review where required.
+The product must not be reduced to a personality quiz, chatbot, course marketplace, generic learning management system or automated career prediction service. Its central method is progressive discovery: gather context, collect multiple kinds of evidence, preserve uncertainty and contradictions, test promising directions through practical activities, and provide explainable guidance with human review where required.
 
-The current source repository contains a synthetic Django domain foundation, deterministic assessment and evidence engine, and versioned career intelligence registry. It does not yet operate with real participants and does not contain production recommendation delivery, WhatsApp integration, AI interpretation, speech, payments, production operator permissions, or deployment.
+The current source repository contains a synthetic Django domain foundation, deterministic assessment and evidence engine, and versioned career intelligence registry. The latest source state explicitly says that real participant operation, participant to career matching, recommendation logic, practical experiments, WhatsApp, external AI, speech, payment processing, production staff authentication and production deployment are not implemented.
 
 The next proposed engineering milestone is a transparent recommendation engine. It must begin only after the owner reviews and approves the assessment snapshot and career snapshot contracts.
 
@@ -36,8 +36,11 @@ Read in this order:
 7. Risks and Decision Register
 8. Developer Onboarding
 9. Source Verification Record
+10. Technical Implementation Reference
+11. Testing and Release Gates
+12. Glossary and Traceability
 
-This package is the developer handoff layer. The original source repository remains authoritative when a discrepancy is found. If this package conflicts with verified source code or an approved owner decision, record the discrepancy and resolve it rather than silently choosing one.
+The original source repository remains authoritative when a discrepancy is found. If this package conflicts with verified source code or an approved owner decision, record the discrepancy and resolve it rather than silently choosing one.
 
 ## Deliverables in this package
 
@@ -51,40 +54,37 @@ This package is the developer handoff layer. The original source repository rema
 | 06_ROADMAP_AND_MILESTONES.md | Existing milestone status, next build sequence, gates and effort estimates |
 | 07_RISKS_AND_DECISIONS.md | Risk register, unresolved questions and owner decisions |
 | 08_DEVELOPER_ONBOARDING.md | Repository workflow, local setup, tests and contribution discipline |
-| 09_SOURCE_VERIFICATION_RECORD.md | Source snapshot, files inspected, verified claims and limits |
+| 09_SOURCE_VERIFICATION_RECORD.md | Source snapshot, inspected files, verified claims and limitations |
+| 10_TECHNICAL_IMPLEMENTATION_REFERENCE.md | Current modules, data boundaries, state model and integration status |
+| 11_TESTING_AND_RELEASE_GATES.md | Verified test evidence, release criteria and safety gates |
+| 12_GLOSSARY_AND_TRACEABILITY.md | Shared terminology, source hierarchy and requirement traceability |
+| diagrams/ | Editable Mermaid architecture and workflow diagram sources |
 
 ## Product principles
 
 1. Discovery before recommendation.
 2. No career inference from one trait or one personality label.
 3. Separate interest, current ability, learning potential, values, constraints and opportunity.
-4. Preserve unknowns rather than manufacturing certainty.
-5. Preserve contradictory evidence and record human resolution.
-6. Treat practical experiments as important evidence, not decorative gamification.
-7. Keep human review for sensitive or high consequence decisions.
-8. Do not automate a process until its quality is understood.
-9. Urdu is the primary participant language; repository and engineering documentation remain English.
-10. Build for smartphone access and uneven connectivity in Pakistan.
-11. Never place identifiable participant records in GitHub.
-12. Product claims must match implemented reality.
+4. Preserve evidence provenance, contradictions, confidence and unknowns.
+5. Use practical experiments to test promising directions before major decisions.
+6. Keep high impact decisions reviewable by a human.
+7. Never confuse synthetic content with validated assessment or market evidence.
+8. Do not activate minors or real participants until consent, safeguarding, privacy and operational gates are approved.
 
 ## Status vocabulary
 
-Use the exact status labels defined in the README. In particular, do not use the word complete for a planned feature or for a model that exists without an end to end workflow.
+- **Implemented:** verified in source code and relevant tests.
+- **Partially implemented:** some records or logic exist, but the complete workflow is incomplete.
+- **Planned:** in approved direction, not implemented.
+- **Proposed:** awaiting owner approval.
+- **Blocked:** cannot safely proceed until a named dependency is resolved.
+- **Unknown:** evidence is insufficient to make a claim.
 
-## Approval checklist
+## Repository authority
 
-Before a development team treats this package as a build contract, the owner must review:
+- Source of truth: https://github.com/zakshub/grow
+- Production workspace: https://github.com/zakshub/grow-prod
+- UX decision intelligence: https://github.com/zakshub/designer
+- Visual production intelligence: https://github.com/zakshub/studio
 
-- Product scope and public positioning.
-- The proposed Milestone 4 input and output contracts.
-- Assessment and career data versioning rules.
-- Minor and guardian policy.
-- Safeguarding ownership and escalation.
-- Data retention, deletion and encryption policy.
-- Production authentication and operator roles.
-- Pilot cohort, review capacity and success criteria.
-- WhatsApp provider and account ownership.
-- Fee and payment policy.
-
-Until these decisions are approved, related implementation must remain blocked or explicitly limited to synthetic development.
+Do not commit new work to the source repository without explicit owner approval.
