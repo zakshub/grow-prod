@@ -1,0 +1,11 @@
+flowchart TD
+    Q[Versioned questions and tasks] --> E[Evidence with source and provenance]
+    E --> D[Dimension result]
+    D --> S{Sufficiency state}
+    S -->|Unknown or insufficient| M[Ask for more evidence]
+    S -->|Contradictory| H[Human review or clarification]
+    S -->|Tentative or supported| C[Career registry context]
+    C --> SNAP[Versioned assessment and career snapshots]
+    SNAP --> NEXT[Future Milestone 4 recommendation engine]
+    NEXT -. requires owner approval and is not implemented .-> OUT[Explainable candidate directions]
+    OUT -. future review gate .-> HUMAN[Human approval before participant delivery]
