@@ -1,0 +1,23 @@
+flowchart LR
+    P[Participant records] --> J[Journey and state services]
+    J --> A[Assessment and evidence]
+    A --> C[Career intelligence registry]
+    J --> R[Human review and overrides]
+    J --> X[Access decisions]
+    J --> F[Follow up records]
+    P --> AU[Audit events]
+    J --> AU
+    A --> AU
+    C --> AU
+    R --> AU
+    X --> AU
+    F --> AU
+    DB[(SQLite local / PostgreSQL configured)] --- P
+    DB --- J
+    DB --- A
+    DB --- C
+    DB --- R
+    DB --- X
+    DB --- F
+    DB --- AU
+    FUTURE[Future only: recommendations, experiments, WhatsApp, AI, speech, production operator UI] -. not implemented .-> J
