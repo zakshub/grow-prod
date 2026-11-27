@@ -1,7 +1,6 @@
 # AGENTS.md — Operating Rules for `zakshub/grow-prod`
 
-> **Project Operating System:** This repository follows **[zakshub/project-os](https://github.com/zakshub/project-os)** (Private).  
-> Follow all 14 steps of `zakshub/project-os/antigravity/OPERATING_INSTRUCTIONS.md` for every task.
+> **Governance & Access Note:** This is a **public** repository. Public contributors should follow this `AGENTS.md`, `README.md`, and `docs/`. Internal maintainer governance and portfolio tracking follow the owner's **private** `zakshub/project-os` repository (`antigravity/OPERATING_INSTRUCTIONS.md`) and **private** `Zakshub Portfolio` board (owner access only).
 
 ---
 
@@ -22,12 +21,12 @@
 6. [docs/11_TESTING_AND_RELEASE_GATES.md](./docs/11_TESTING_AND_RELEASE_GATES.md)
 
 ## 3. Milestone & Owner Approval Gates
-- Check active GitHub Issues (`gh issue list -R zakshub/grow-prod`) and **Zakshub Portfolio** (`https://github.com/users/zakshub/projects/2`) before starting work.
+- Check active GitHub Issues (`gh issue list -R zakshub/grow-prod`)—and for the repository owner, the private `Zakshub Portfolio` board—before starting work.
 - Do not begin implementation of Milestone 4 or new product features before owner approval of input contracts and acceptance criteria (see issue `#1` and `#2`).
 
 ## 4. Design & Visual Intelligence
-- **UX/UI decisions:** Consult `/root/.intelligence/designer` (`zakshub/designer`) before designing screens or interaction flows.
-- **Visual / photographic assets:** Consult `/root/.intelligence/studio` (`zakshub/studio`) under the Designer–Studio Contract whenever imagery is required.
+- **UX/UI decisions:** Consult canonical UX/UI intelligence (`zakshub/designer`, via your configured local intelligence workspace when available) before designing screens or interaction flows.
+- **Visual / photographic assets:** Consult canonical visual-production intelligence (`zakshub/studio`, under the Designer–Studio Contract) whenever imagery is required.
 
 ## 5. Verification & Safety Rules
 - Run documentation/YAML/link checks (`ci.yml`) and any added test suites before opening a Pull Request.
