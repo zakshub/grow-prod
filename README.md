@@ -58,3 +58,10 @@ The document system uses a light, editorial technical-report layout: warm neutra
 **Source repository snapshot:** `zakshub/grow` main, tree SHA `80fb54fdb6bd37848c4f201bdeb643a876ca8e3c`  
 **Destination snapshot before this update:** `zakshub/grow-prod` main, tree SHA `9e54e2130fc57ad15da81fe7e1ce2b7b9fb52373`  
 **Document status:** Expanded developer handoff package, pending owner review.
+
+---
+
+## Project Operating System
+
+For public contributor guidance, local verification commands, and AI assistant rules, see [AGENTS.md](./AGENTS.md) and the repository documentation.  
+Internal maintainer governance and portfolio tracking use the owner's private `zakshub/project-os` repository and private `Zakshub Portfolio` board (owner access only).
